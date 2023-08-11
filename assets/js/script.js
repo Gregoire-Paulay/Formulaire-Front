@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // });
 
     const response = await axios.post(
-      "https://site--formulaire-back--hpyqm5px6d9r.code.run/form",
+      "https://form-b--formulaire-back--hpyqm5px6d9r.code.run/form",
       {
         firstname,
         lastname,
