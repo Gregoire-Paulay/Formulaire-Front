@@ -24,14 +24,17 @@ document.addEventListener("DOMContentLoaded", () => {
     //   message,
     // });
 
-    const response = await axios.post("http://localhost:3000/form", {
-      firstname,
-      lastname,
-      email,
-      sujet,
-      message,
-    });
+    const response = await axios.post(
+      "https://site--formulaire-back--hpyqm5px6d9r.code.run/form",
+      {
+        firstname,
+        lastname,
+        email,
+        sujet,
+        message,
+      }
+    );
 
-    console.log("response>>", response);
+    console.log("response>>", response.data);
   });
 });
